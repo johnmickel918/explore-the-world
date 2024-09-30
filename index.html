@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body{
+        background-color: black;
+    }
+    header{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("forest.jpeg");
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .header-content {
+        color: antiquewhite;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    .header-content h1{
+        margin-top: 9px;
+        margin-bottom: 9px;
+        font-size: 90px;
+        font-family: 'Satisfy', cursive;
+    }
+    .header-content h3 {
+        font-size:40px ;
+        font-family: 'Satisfy', cursive;
+    }
+    .btn {
+        background-color: rgb(233, 177, 74);;
+        padding: 10px 20px;
+        color:black;
+        font-weight: 600;
+        font-size: 20px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        text-decoration: none;
+       
+    }
+    
+    .btn:hover {
+        transform: translateX(10px);
+        border: 2px solid white;
+        background:transparent;
+        color:antiquewhite;
+    }
+        
+
+
+    ul{
+        list-style: none;
+    }
+    .navbar{
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        width:100%;
+        justify-content: space-between;
+        padding: 20px;
+        color: antiquewhite;
+        }
+    .nav-links{
+        display: flex;
+        align-items: center;
+        
+    }
+    .nav-links li{
+        margin: 0 30px;
+        font-size: 25px;
+      
+    }
+    .nav-links li a {
+        color: azure;
+        text-decoration: none;
+        padding: 50px 16px;
+    }
+    .nav-links li a:hover, .nav-links li a.active{
+        text-decoration: solid;
+        text-decoration: underline;
+        color: grey;
+    }
+    .logo{
+        color: antiquewhite;
+        padding: 20px;
+        margin-left: 34px;
+        font-size: 40px;
+        color: rgb(233, 177, 74);
+        font-family: 'Satisfy', cursive;
+    }
+        
+    .holiday {
+         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        color: antiquewhite;
+        align-items: center;
+        gap: 9rem;
+    }
+ 
+    .holiday-img img{
+        width: 300px;
+        height: 20%;
+        border-radius: 50px;
+        align-items: center;
+        margin-left: 400px;
+        box-shadow: 7px 5px 10px gray;
+    }
+    
+      .holiday-text h5{
+        font-size:20px ;
+        font-weight: 600;
+        letter-spacing: 6px;
+        margin-bottom: 20px;
+        color: rgb(233, 177, 74);
+        
+      }  
+
+      .holiday-text h2 {
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 25px;
+        font-size: 50px;
+        font-family: 'Satisfy', cursive;
+      }
+        .holiday-text p{
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 35px;
+          
+        }
+        .holiday-img:hover {
+            transform: scale(1.04);
+            cursor: pointer;
+        }
+
+        .center-text {
+            text-align: center;
+            color: antiquewhite;
+         }
+
+         .center-text h2  {
+            font-weight: 900;
+            font-size: 80px;
+            color: antiquewhite;
+           text-shadow: 0cap;
+           font-family: 'Satisfy', cursive;
+         }
+
+        .tour-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+            align-items: center;
+            gap: 3rem;
+            margin-top: 5rem;
+            color: antiquewhite;
+        }
+      .box1 img {
+        width: 300px;
+        height: 20%;
+        border-radius: 10px;
+        filter: brightness(70%);
+        margin-left: 300px;
+        box-shadow: 7px 5px 10px gray;
+        }
+
+      .box2 img {
+        width: 300px;
+        height: 20%;
+        border-radius: 10px;
+        filter: brightness(70%);
+        box-shadow: 7px 5px 10px gray;
+      }
+
+      .box3 img {
+        width: 300px;
+        height: 20%;
+        border-radius: 10px;
+        filter: brightness(70%);
+        margin-right: 200px;
+        box-shadow: 7px 5px 10px gray;
+      }
+
+     .center-btn {
+        text-align: center;
+        margin-top: 4rem;
+     }
+     .newsletter {
+          background-image: url("dark.webp");
+     }
+     
+     .newsletter-content {
+
+        
+        display: grid;
+        align-items: center;
+        gap: 2rem;
+        color: antiquewhite;
+        margin-left: 500px;
+        margin-top: 40px;
+     }
+      
+      .newsletter-text h2 {
+        font-size: 60px;
+        font-weight: 800;
+        margin-bottom: 15px;
+        font-family: 'Satisfy', cursive;
+      }
+
+      .newsletter-content form{
+        display: grid;
+        grid-template-columns: 1fr 0.4fr;
+        gap: 1rem;
+        margin-right: 500px;
+      }
+
+      .newsletter-content form input:first-child{
+        padding: 15px;
+        background: gray;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .footer-col{
+        width: 15%;
+        padding: 0 15px;
+        margin-left: 90px;
+        margin-top: 70px;
+      }
+
+      .footer-col h4{
+        color:rgb(233, 177, 74) ;
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        margin-left: 40px;
+        text-decoration: underline rgb(233, 177, 74);
+        font-family: 'Satisfy', cursive;
+      }
+
+      .footer-col ul li a {
+        color: antiquewhite;
+        font-size: 20px;
+        text-decoration: none;
+      }
+       .footer-col ul li a:hover{
+        color: azure;
+        padding-left: 10px;
+       }
+      
+    .footer-col .social-links a{
+        height: 700px;
+        width: 700px;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+</style>
+<body>
+
+    <nav class="navbar">
+      <h1 class="logo">TRAVEL</h1>
+      <ul class="nav-links">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Explore</a></li>
+    <li><a href="#">Popular</a></li>
+    </ul>
+      
+    </nav>
+    <header>
+        <div class="header-content">
+            <h3>Welcome To Travel</h3>
+            <h1>Explore The World</h1>
+            <h4>Live the trips explore the world,discover paradises, islands,mountains and much more ,get your trip now.</h4>
+            <a href="#" class="btn">Book a trip</a>
+
+        </div>
+    </header>
+     
+    <section class="holiday">
+        
+        <div class="holiday-img">
+            <img src="japan3.jpg" >
+        </div>
+        <div class="holiday-text">
+            <h5>WELCOME TO TRAVEL</h5>
+            <h2>Have you enjoyed your holiday ?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores rerum doloribus error quasi blanditiis eaque eveniet saepe quaerat voluptate ducimus dolorem nobis obcaecati, repellat mollitia explicabo sint. Autem quibusdam odio nihil inventore quod nisi pariatur sapiente exercitationem aliquam vero nesciunt, optio in eligendi ipsam quisquam consectetur.
+
+
+            </p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+    
+    <section class="tour">
+        <div class="center-text">
+            <h2>Popular tour</h2>
+        </div>
+
+        <div class="tour-content">
+            <div class="box1">
+                <img src="japan3.jpg" >
+                </div>
+
+            <div class="box2">
+                <img src="seoule.jpg" >
+                </div>
+
+            <div class="box3">
+                <img src="mountlogan.jpg" >
+               </div>
+        </div>
+        <div class="center-btn">
+            <a href="#" class="btn">See Tour</a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        
+        <div class="newsletter-content">
+           <div class="newsletter-text">
+            
+                <h2>Ready to Explore ?</h2>
+                 <p>Lets go on vacation, make your day happy.</p>
+                
+            </div>
+            <form action="">
+                <input type="email" placeholder="Enter your email">
+                <input type="submit" value="Get Started" class="btn">
+            </form>
+        </div>
+    </section>
+  
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Privay</a></li>
+                    <li><a href="">Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Highlight</h4>
+                <ul>
+                    <li><a href="">Our story</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Term of services</a></li>
+                    <li><a href="">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</section>
+</body>
+</html>

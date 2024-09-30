@@ -1,0 +1,14 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+header {
+    width: 100VW;
+    margin: 100vh;
+    background-image: url("forest.jpeg");
+
+}
+h3{
+    color: antiquewhite;
+}
